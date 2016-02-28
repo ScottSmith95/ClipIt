@@ -10,7 +10,8 @@ export default Ember.Component.extend({
     },
     starClip: function() {
       console.log("starClip");
-      this.set('star', false);
+      this.get('clip').toggleProperty('star');
+      // this.set('star', false);
       this.get('clip').save();
     }
   }
