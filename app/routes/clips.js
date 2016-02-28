@@ -11,7 +11,7 @@ export default Ember.Route.extend({
         //     {
         //         title: "Facebook Link",
         //         url: "http://facebook.com",
-        //         complete: false,
+        //         star: false,
         //     }
         // ];
         // return clips;
