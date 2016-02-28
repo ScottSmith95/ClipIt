@@ -5,5 +5,9 @@ export default Ember.Route.extend({
         return this.store.query('clip', {
           star: true
         });
+    },
+
+    renderTemplate() {
+      this.render('index'); // Render into the index template
     }
 });

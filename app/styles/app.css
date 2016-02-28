@@ -221,13 +221,14 @@ label[for='toggle-all'] {
 	height: 40px;
 	margin: auto 0;
 	font-size: 30px;
-	color: #cc9a9a;
+	color: #F73D38;
 	margin-bottom: 11px;
-	transition: color 0.2s ease-out;
+	cursor: pointer;
+	transition: color 0.15s ease;
 }
 
 #clips-list li .destroy:hover {
-	color: #af5b5e;
+	color: #B12825;
 }
 
 #clips-list li .destroy:after {

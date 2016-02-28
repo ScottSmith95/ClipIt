@@ -9,7 +9,8 @@ export default Ember.Component.extend({
       this.get('clip').save();
     },
     starClip: function() {
-      this.set('star', true);
+      console.log("starClip");
+      this.set('star', false);
       this.get('clip').save();
     }
   }

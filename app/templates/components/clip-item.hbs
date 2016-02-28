@@ -1,5 +1,5 @@
 <li class="clip">
-    {{input type="checkbox" class="toggle" checked="attrs.clip.star"}}
-    <label><a href="{{attrs.clip.url}}">{{attrs.clip.title}}</a></label><button class="destroy" {{action "deleteClip"}}></button>
-    {{input type="url" value=attrs.clip.url}}
+    <input type="checkbox" checked="{{clip.star}}" {{action "starClip"}}>
+    <label><a href="{{attrs.clip.url}}">{{clip.title}}</a></label><button class="destroy" {{action "deleteClip"}}></button>
+    {{input type="url" value=clip.url}}
 </li>
