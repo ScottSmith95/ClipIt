@@ -1,14 +1,13 @@
 <h2>Clips Template</h2>
 
-<input type="text" id="new-clips" placeholder="What needs to be done?" />
+{{input value=title placeholder="Title"}}
+{{input value=url placeholder="https://..."}}
+<button {{action "createClip"}}>Publish</button>
 
 <section id="main">
     <ul id="clips-list">
         {{#each model as |clips|}}
-            <li class="completed">
-                <input type="checkbox" class="toggle">
-                <label>{{clips.title}}</label><button class="destroy"></button>
-            </li>
+            {{clip-item clip=clips}}
         {{/each}}
     </ul>
 
@@ -21,7 +20,7 @@
     </span>
     <ul id="filters">
         <li>
-            <a href="/" class="selected">All</a>
+            {{#link-to "clips"}}All{{/link-to}}
         </li>
         <li>
             {{#link-to "starred"}}Starred{{/link-to}}

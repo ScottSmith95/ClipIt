@@ -1,0 +1,5 @@
+<li class="completed">
+    <input type="checkbox" class="toggle">
+    <label><a href="{{clip.url}}">{{clip.title}}</a></label><button class="destroy" {{action "deleteClip" id}}></button>
+    {{input type="url" value=clip.url}}
+</li>
