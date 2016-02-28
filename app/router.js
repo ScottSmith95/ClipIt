@@ -6,8 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('clips', { path: '/' });
-  this.route('starred', { path: '/starred' });
+  this.route('starred');
 });
 
 export default Router;

@@ -1,0 +1,20 @@
+{{clip-create newClip=model createClip="createClip"}}
+
+<section id="main">
+    <ul id="clips-list">
+        {{#each model as |clips|}}
+            {{clip-item clip=clips}}
+        {{/each}}
+    </ul>
+</section>
+
+<footer id="footer">
+    <ul id="filters">
+        <li>
+            {{#link-to "index"}}All{{/link-to}}
+        </li>
+        <li>
+            {{#link-to "starred"}}Starred{{/link-to}}
+        </li>
+    </ul>
+</footer>

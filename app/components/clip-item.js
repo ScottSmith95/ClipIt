@@ -4,12 +4,13 @@ export default Ember.Component.extend({
 
   actions: {
     deleteClip: function() {
-      this.store.destroyRecord();
-      // this.destroyRecord();
+      this.get('clip').deleteRecord();
+      this.get('isDeleted');
+      this.get('clip').save();
     },
     starClip: function() {
-      this.get('star');
-      this.save()
+      this.set('star', true);
+      this.get('clip').save();
     }
   }
 });

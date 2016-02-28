@@ -1,0 +1,6 @@
+<form class="clip-create">
+{{input value=newClip.title placeholder="Title"}}
+{{input value=newClip.url placeholder="https://..."}}
+<input type="submit" {{action "createClip" newClip}} style="display: none">
+<button {{action "createClip" newClip}}>Create</button>
+</form>
