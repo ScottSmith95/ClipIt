@@ -83,7 +83,7 @@ input[type="checkbox"] {
 	text-rendering: optimizeLegibility;
 }
 
-#new-clips,
+/*#new-clips,
 .edit {
 	position: relative;
 	margin: 0;
@@ -146,16 +146,13 @@ label[for='toggle-all'] {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	border-top: 1px solid #dedede;
 }
 
-#clips-list li {
+li.clip {
 	position: relative;
 	font-size: 24px;
-	border-bottom: 1px solid #ededed;
-}
-
-#clips-list li:last-child {
-	border-bottom: none;
+	border-bottom: 1px solid #dedede;
 }
 
 #clips-list li.editing {
@@ -186,14 +183,6 @@ label[for='toggle-all'] {
 	border: none; /* Mobile Safari */
 	-webkit-appearance: none;
 	appearance: none;
-}
-
-#clips-list li .toggle:after {
-	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
-}
-
-#clips-list li .toggle:checked:after {
-	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
 }
 
 #clips-list li label {
@@ -247,7 +236,7 @@ label[for='toggle-all'] {
 	margin-bottom: -1px;
 }
 
-#footer {
+footer {
 	color: #777;
 	padding: 10px 15px;
 	height: 20px;
@@ -255,7 +244,7 @@ label[for='toggle-all'] {
 	border-top: 1px solid #e6e6e6;
 }
 
-#footer:before {
+footer:before {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -268,15 +257,6 @@ label[for='toggle-all'] {
 	            0 9px 1px -3px rgba(0, 0, 0, 0.2),
 	            0 16px 0 -6px #f6f6f6,
 	            0 17px 2px -6px rgba(0, 0, 0, 0.2);
-}
-
-#clips-count {
-	float: left;
-	text-align: left;
-}
-
-#clips-count strong {
-	font-weight: 300;
 }
 
 #filters {
@@ -344,13 +324,13 @@ html #clear-completed:active {
 
 #info a:hover {
 	text-decoration: underline;
-}
+}*/
 
 /*
 	Hack to remove background from Mobile Safari.
 	Can't use it globally since it destroys checkboxes in Firefox
 */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
 	#toggle-all,
 	#clips-list li .toggle {
 		background: none;
@@ -374,4 +354,4 @@ html #clear-completed:active {
 	#filters {
 		bottom: 10px;
 	}
-}
+}*/
